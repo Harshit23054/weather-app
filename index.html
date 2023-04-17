@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="flex my-1 justify-between">
+        <div class="left ml-1 text-black font-bold text-2xl xl:text-7xl xl:font-bold xl:ml-7">Weather app</div>
+        <div class="text-3xl">
+            
+<form class="xl:mt-4 xl:mr-16">   
+    <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+    <div class="relative">
+        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+            <svg aria-hidden="true" class="w-4 h-4  text-gray-500 dark:text-gray-400 xl:w-7 xl:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        </div>
+        <input id ="city" type="search" id="default-search" class="block  h-5 p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 xl:h-12 xl:w-96 " placeholder="enter city" required>
+        <button type="submit" id="submit" class="text-white  absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm mb-0 px-1 dark:bg-sky-600 dark:hover:bg-sky-700 dark:focus:ring-blue-800 xl:w-32 xl:h-8">Search</button>
+    </div>
+</form>
+
+        </div>
+    </nav>
+    <h1 class="city text-center text-4xl font-bold mt-12 xl:mt-44 xl:text-8xl">Weather For <span id="cityName">Delhi</span></h1>
+    <section class="flex flex-col mx-10 mt-2 xl:flex-row items-center justify-center xl:mt-20 " id="home">       
+<div href="#" class="block my-4 w-80 max-w-x p-4 bg-white border border-gray-200 rounded-lg shadow  dark:bg-gray-800 dark:border-gray-700 xl:h-96 xl:w-96 mx-10">
+    <h5 class=" text-2xl -mt-3 text-center font-bold tracking-tight text-gray-900 dark:text-white xl:text-5xl xl:mt-1">Temperatures</h5>
+    <h1 class="text-3xl text-center text-white xl:text-7xl mt-7"><span id="temp2"></span><span class="IZ6rdc  ">°C</span></h1>
+    
+    <ul class="text-white mx-6 mt-3 xl:text-2xl xl:mt-9">
+        <li>Temperaturesis is <span id="temp"></span></li>
+        <li>Min Temperatures is <span id="min_temp"></span></li>
+        <li>Max Temperatures is <span id="max_temp"></span></li>
+    </ul>
+</div>
+
+<div href="#" class="block my-4 w-80 max-w-x p-4 bg-white border border-gray-200 rounded-lg shadow  dark:bg-gray-800 dark:border-gray-700 xl:h-96 xl:w-96 mx-10">
+    <h5 class=" text-2xl -mt-3 text-center font-bold tracking-tight text-gray-900 dark:text-white xl:text-5xl xl:mt-1 ">Humidity Info</h5>
+    <h1 class="text-3xl text-center text-white xl:text-7xl mt-7"><span id="humidity2"></span>%</h1>
+    
+    <ul class="text-white mx-6 mt-3 xl:text-3xl xl:mt-9">
+        <li>Wind Degree is <span id="wind_degrees"></span></li>
+        <li>feels_like is <span id="feels_like"></span></li>
+        <li>humidity is <span id="humidity"></span></li>
+    </ul>
+</div>
+
+
+<div href="#" class="block my-4 w-80 max-w-x p-4 bg-white border border-gray-200 rounded-lg shadow  dark:bg-gray-800 dark:border-gray-700 xl:h-96 xl:w-96 mx-10 ">
+    <h5 class=" text-2xl -mt-3 text-center font-bold tracking-tight text-gray-900 dark:text-white xl:text-5xl xl:mt-1">Wind Info</h5>
+    <h1 class="text-3xl text-center  text-white xl:text-7xl mt-7"><span id="wind_speed2"></span>km/hr</h1>
+    
+    <ul class="text-white mx-6 mt-3 xl:text-3xl xl:mt-9">
+        <li>Wind Speed is <span id="wind_speed"></span></li>
+        <li>Sunrise is <span id="sunrise"></span></li>
+        <li>Sunset is <span id="sunset"></span></li>
+        <!-- <li>cloud-pct is <span id="cloud_pct"></span></li> -->
+       
+        <!-- <li>humidity is <span id="humidity"></span></li> -->
+    </ul>
+</div>
+
+
+
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
